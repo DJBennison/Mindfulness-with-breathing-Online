@@ -1,0 +1,424 @@
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color:#dbf3ff;
+    padding: 0;
+    margin: 0;
+}
+
+.spacePad {
+    padding: 30px;
+    margin: 30px 0;
+}
+
+header {
+    background-color:#dbf3ff;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul{
+    list-style-type: none;
+    overflow: hidden;
+    
+}
+
+nav a{
+    color: black;
+    text-decoration: none;
+    padding: 15px 50px;
+    font-size: 2rem;
+    display: block;
+    text-align: center;
+}
+
+nav a:hover{
+    color: rgba(132, 130, 130, 0.418);
+    
+}
+
+nav li{
+    float: left;
+}
+
+.wheel{
+    width: 300px;
+    margin: auto;
+}
+
+#intro {
+    background-color:#7ec5ef;
+    font-size: 2rem;
+    text-align: center;
+}
+
+#intro li {
+    list-style-type: none;
+}
+
+
+#develop {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 2fr 1fr;
+}
+
+.wholesome{
+    height: 600px;
+    background-color:#1e4262;
+    justify-content: center;
+}
+
+.wholesomeText {
+    margin: auto;
+    margin-top: 8rem;
+    font-size: 2rem;
+    padding: 6px;
+    width: 250px;
+    height: 250px;
+    background-color: #7ec5ef;
+    border-radius: 200px;
+    text-align: center;
+    
+    
+
+}
+
+.animate {
+    animation: inhale 13s ease forwards;
+}
+
+.exhale {
+    animation-name: exhale;
+}
+
+
+@keyframes inhale {
+    0% {
+        transform: scale(100%);
+    }
+    100% {
+        transform: scale(180%);
+    }
+}
+
+@keyframes exhale{
+    0% {
+        transform: scale(180%);
+    }
+    100% {
+        transform: scale(100%);
+    }
+}
+
+/* Fade in for text */
+
+.fadeIn{
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+@keyframes fade{
+    0% {
+        opacity: 0;
+        transform: scale(70%);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(100%);
+    }
+}
+
+
+
+.sessionTime{
+    margin-left: auto;
+    text-align: center;
+    margin-top: -20px;
+    margin-bottom: -170px;
+    margin-right: 20px;
+    
+    font-size: 2rem;
+    width: 10rem;
+    height: 10rem;
+    background-color: #7ec5ef;
+    border-radius: 10rem;
+
+}
+
+.spotBubble {
+    margin-right: auto;
+   
+    margin-top: -190px;
+    /* margin-bottom: -170px; */
+    margin-left: 20px;
+    font-size: 2rem;
+    width: 10rem;
+    height: 10rem;
+    background-color: #7ec5ef;
+    border-radius: 10rem;
+    text-align: center;
+}
+
+.point:hover {
+    cursor: pointer;
+}
+
+.spotBubble h3 {
+    padding: 50px 0px;
+}
+
+.sessionTime h1{
+    padding-top: 45px;
+}
+
+
+.bubbleTimer{
+    margin: auto;
+    text-align: center;
+    margin-top: 8rem;
+    font-size: 2rem;
+    width: 10rem;
+    height: 3rem;
+    background-color: #7ec5ef;
+    border-radius: 200px;
+    
+}
+
+.timerAnimate{
+    animation: inhaleTime 13s ease forwards;
+}
+
+.bubbleTimerExhale {
+    animation-name: exhaleTime;
+}
+
+@keyframes inhaleTime {
+    0% {
+        transform: scalex(100%);
+    }
+    100% {
+        transform: scalex(200%);
+    }
+}
+
+@keyframes exhaleTime {
+    0% {
+        transform: scalex(200%);
+    }
+    100% {
+        transform: scalex(100%);
+    }
+}
+
+.listChange {
+
+    width: 50px;
+    margin-left: auto;
+    margin-top: -285px;
+    margin-right: 15px;
+    
+    
+}
+
+.circleButton {
+    background-color: #7ec5ef;
+    margin: 1.5px;
+    font-size: 3rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    border: none;
+    border-radius: 100%;
+}
+
+
+
+#settings {
+    background-color:#dbf3ff;
+    margin:  auto;
+    
+}
+
+.settingHeader{
+    color: #1e4262 ;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: -5px 0px;
+}
+
+.rain {
+    text-align: center;
+    background-color: #7ec5ef;
+    font-size: 1.5rem;
+    margin: 20px 0px;
+    width: 400px;
+    padding:  0.7rem 1rem;
+}
+
+.mainSettings{
+    background-color: #7ec5ef;
+    display: block;
+    
+
+}
+
+.setButton{
+    background-color: #7ec5ef;
+    width: 400px;
+    margin: 12px 5px;
+    font-size: 1.5rem;
+    border: none;
+    color:#1e4262;
+    cursor: pointer;
+    
+    
+}
+
+.dropDown li{
+    color: #dbf3ff;
+    list-style-type: none;
+    font-size: 1.5rem;
+    padding: 10px 15px;
+    margin-left: -40px;
+}
+
+.dropDown .content {
+    display: none;
+    position: absolute;
+    margin-top: -20px;
+    min-width: 200px;
+    background-color:#1e4262;
+    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+    cursor: pointer;
+}
+
+.dropDown:hover .content{
+    display: block;
+}
+
+.setButton:hover {
+    background-color: #addffc;
+}
+
+.dropDown li:hover{
+    background-color:#1d2f3f;
+}
+
+
+
+.create{
+    text-align: center;
+    background-color: #7ec5ef;
+    font-size: 1.5rem;
+    margin: 20px 0px;
+    width: 400px;
+    padding: 1rem;
+   
+
+}
+
+.addText {
+    background-color: #dbf3ff;
+    margin: 15px 5px;
+    width: 350px;
+    height: 25px;
+    font-size: 1.5rem;
+    padding: 1rem;
+    border: #1e4262 solid 0.5px;
+}
+
+.submitText {
+    font-size: 1.5rem;
+    padding: 1rem;
+    background-color: #dbf3ff;
+    border: #1e4262 solid 0.5px;
+}
+
+
+
+/* .rain audio{
+    font-size: 1.5rem;
+    padding: 1rem;
+    background-color: #dbf3ff;
+    border: #1e4262 solid 0.5px;
+} */
+
+
+#info { 
+    background-color:rgba(11, 50, 9, 0.692);
+    color: rgb(255, 255, 255);
+    font-size: 1.4rem;
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    
+    background-color:#5a3e30;
+    color: #ffffff;
+    font-size: 1.2rem;
+    padding: 20px;
+}
+
+/* More animation */
+
+.glowUp {
+    animation-name: glow;
+    animation-duration: 3s;
+   
+    
+}
+
+.discordLink {
+    color: rgb(255, 255, 255);
+    
+}
+
+.discordLink:visited  {
+    color: #7ec5ef;
+}
+
+@keyframes glow{
+    50%{box-shadow: 0px 0px 50px rgb(255, 255, 255);}
+
+   
+}
+
+
+@media all and (max-width: 1200px) {
+    #develop {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: 1fr;
+    }
+    
+}
+
+@media all and (max-width: 900px) {
+   .wholesomeText {
+    width: 135px;
+    height: 135px;
+    font-size: 1rem;
+    position: relative;
+    top: -20px;
+
+
+   }
+
+   .bubbleTimer {
+    position: relative;
+    top: -60px;
+   }
+
+   .sessionTime{
+    position: relative;
+    top: 400px;
+   }
+
+   .spotBubble{
+    margin-top: -70px;
+    position: relative;
+    top: -10px;
+   }
+    
+}
+
