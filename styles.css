@@ -395,9 +395,9 @@ footer {
 
 @media all and (max-width: 900px) {
    .wholesomeText {
-    width: 135px;
-    height: 135px;
-    font-size: 1rem;
+    width: 150px;
+    height: 150px;
+    font-size: 1.2rem;
     position: relative;
     top: -20px;
 
@@ -411,14 +411,17 @@ footer {
 
    .sessionTime{
     position: relative;
-    top: 400px;
+    top: 405px;
    }
 
    .spotBubble{
-    margin-top: -70px;
+    margin-top: -78px;
     position: relative;
     top: -10px;
    }
     
+   #develop{
+    margin: -30px;
+   }
 }
 
