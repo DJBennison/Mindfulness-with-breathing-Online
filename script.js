@@ -1,4 +1,4 @@
-console.log('hello world');
+
 
 // variables and info
 let sessionStart = false;
@@ -153,7 +153,7 @@ function  settingsSelect(e){
     else if (e.target.classList.value == 'setButton customList'){
         wholesomeList = customList;
         wholesomeListMode = 'alternate';
-        console.log('hi');
+        
     }
     // These are for the premade
     else if (e.target.classList.value == 'steps16' ){
@@ -207,7 +207,6 @@ function breathChange(){
         
         timerTime = 0; 
         breathTimer.textContent = timerTime;
-        console.log(wholesomeNumberIn);
         spot.classList.remove('glowUp');
         
     } else {
@@ -269,8 +268,8 @@ function makeWholesomeLi(item) {
 
 }
 
+// Allows you to add custom wholesome Thoughts
 function addCustomWholesome(){
-    console.log(addWindow.value);
     makeWholesomeLi(addWindow.value)
     
     // Add to Local Storage
@@ -284,6 +283,8 @@ function addCustomWholesome(){
     addWindow.value = '';
 }
 
+
+// Gets the wholesome thoughts from storage.
 function getItemsFromStorage() {
     let itemsFromStorage;
 
@@ -298,7 +299,7 @@ function getItemsFromStorage() {
 
 // Come back and do this with a filter if I feel like it.
 function deleteCustom(e){
-    console.log(e.target.textContent);
+    
     customList.forEach((i, n) => {
         if (i === e.target.textContent){
             customList.splice(n, 1)
