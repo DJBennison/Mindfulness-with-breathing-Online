@@ -8,13 +8,13 @@ let inhale = true;
 let breath = "Exhale"
 let length = ""
 
-let sixteenSteps = ["Is this a long breath?","Is this a short breath?","Aware of the whole body","Relaxing the whole body","Aware of successful joy","Aware of easy satisfaction","Aware of emotional habits","Calming emotional habits","Aware of the mind","gladdening the mind","Unifying the mind","Freeing the mind","investigating change","investigating decay","investigating the end","Investigating release"]
-let defaultList = ['this is satisfying enough','letting it all go']
-let randomWholesomeList = ['This is satisfying enough','We got this', "Wow, I can do this","No place to go","nothing to do","everything gonna be alright",'This is it', 'I can relax right now','nothing beats this','I can just relax','no need for anything else right now']
+let sixteenSteps = ["Is this a long breath?","Is this a short breath?","Aware of the body","Relaxing the body","sensitive to successful joy","sensitive to easy satisfaction","Aware of conditions","calming conditions","Aware of mind states","gladdening the mind","collecting the mind","freeing the mind","investigating change","investigating fading","investigating ending","Investigating release"]
+let defaultList = ['This is satisfying enough',"It's nice to relax right now"]
+let randomWholesomeList = ['This is satisfying enough','We got this', "Wow, I can do this","No place to go","nothing to do","everything is alright right now",'This is it', 'I can relax right now','nothing beats this','I can just relax','no need for anything else right now']
 let wholesomeInList = ['This is satisfying enough','We got this', "Wow, I can do this","No place to go","nothing to do","everything gonna be alright"]
 let wholesomeOutList = ['Letting it all go', 'relaxing the whole body', 'releasing all stress', "I'm a happy camper", "got everything I need"]
-let hindranceSpotList = ['Glad to see you!', 'A ha I see you!', 'Congratulations', 'Never mind, we can start again!', 'Got you!']
-let sevenFactors = ['remembering','invesigating','energizing','enjoying','relaxing','unifying','balancing']
+let hindranceSpotList = [ 'A-ha! I see you mara!', 'Congratulations']
+let sevenFactors = ['Remembering','Investigating','energizing','enjoying','relaxing','collecting','balancing']
 let customList = []
 
 let wholesomeList = defaultList

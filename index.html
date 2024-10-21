@@ -6,6 +6,10 @@
     <meta name="description" content="Free online mindfulness with breathing app">
     <title>Mindfulness with Breathing online</title>
     <link rel="icon" type="image/jpg" href="godlwheeliconsmall.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -14,6 +18,7 @@
             <ul>
                 <li><a href="#intro">Intro</a></li>
                 <li><a href="#develop">Develop</a></li>
+                <li><a href="#participate">Participate</a></li>
                 <li><a href="#settings">Settings</a></li>
                 <li><a href="#info">Information</a></li>          
             </ul>
@@ -29,13 +34,11 @@
                 <h3>Get started now!</h3>
             
             <ul>
-                <li>Stay engaged! Click to change from Inhale to Exhale.</li>
+                <li>Stay engaged! Click to change from Inhale to Exhale and breathe along.</li>
                 <li>When the mind goes to the unwholesome press the spot button.</li>
                 <li>Measure your breath lengths with the breath timer.</li>
                 <li>Read wholesome thoughts to help gladden the mind.</li>
-
-                
-                
+    
             </ul>
     
 
@@ -52,9 +55,10 @@
                    
                     
                 </div>   
-                
-                <div class="bubbleTimer">
-                    <h4> </h4>
+                <div class="timerWrap">
+                    <div class="bubbleTimer">
+                        <h4> </h4>
+                    </div>
                 </div>
 
                 <div class="spotBubble point">
@@ -105,8 +109,7 @@
                 </div>
                 <div class="rain">
                     <h3>Rain Sounds</h3>
-                    <audio src="Rain.mp3" controls loop> </audio>
-
+                    <iframe class="rainVideo"src="https://www.youtube.com/embed/BY_lSm2gSzY?si=-6eOgRQfPkg3y2vO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
 
                 <!-- Add sound later -->
@@ -120,12 +123,30 @@
 
 
         
+        <section id="participate">
+            <h2>Get involved!</h2>
+            <p>Join a community of folks practicing the Noble Dhamma. Check out Dhamma Friends discord, and the open Sangha Foundation website.</p>
+            
+            <div class="flex">
+                <div class="communityBox">
+                    <a class="communityLink" href="https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbG8tbGN1RXJHM1U0SXctZW5YV09FejNUUlpYd3xBQ3Jtc0tsX05RZHVMS2I0a3kxSlZHY2xUX2lWTnlZQkJJYnpLUUR4aVN0OE9wTEJRTWVnOWFxMktlbnB2a3pUOFZrbXpGN2tfd3R0X1haVXdoSW5QaFJsaGlnd3NSaWQ5VW93Y2dXRUR5R2ZVRHpMYjl1c3Uzdw&q=https%3A%2F%2Fdiscord.gg%2FepphTGY&v=tnBWsat5gEY" target="_blank">
+                    <i class="fa-brands fa-discord"></i></a>
+                    <p>Discord</p>
+                </div>
+                <div class="communityBox">
+                    <a class="communityLink" href="https://opensanghafoundation.org/newsite/" target="_blank"><i class="fa-solid fa-leaf"></i></a>
+                    <p>OSF</p>
+                </div>
+            </div>
+            
 
+
+        </section>
        
 
         <section id="info">
             <h2>Information</h2>
-            <h4>Here is some more information on how to practice!</h4>
+            <h3>Here is some more information on how to practice!</h3>
             <p> 
                 This app is not meant to replace the practice without any aid of a computer. You can do this by yourself when you remember. Get into seculsion, and devleop the skill of 
                 being able to be joyfully satisfied without being dependent on anything. 
@@ -147,31 +168,43 @@
             </p>
             <p>
                 Put in the right effort to change the hindrances. When you notice your mind wondering into the unwholesome click the spot button. 
-                Recognize that the thought/feelings are not I/Me/Mine. Be glad that you can see it, if you can see it it's not you. Now you can be glad and return to the breath, instead of being sad that the mind wandered.
+                Recognize that the thought/feelings are not I/Me/Mine. Be glad that you can see it, if you can see it's not you. Now you can be glad and return to the breath, instead of being sad that the mind wandered.
                 This is part of the training. Congratulations for catching it, you just made a wholesome change!
             </p>
             <p>
                 Rain sounds have been added to help block out noise and help you get into seculsion, if folks around you are playing the television really loud.
-                You can also be chill whatever sounds are in your environment, in the heard is only the heard. The choice is yours! 
+                You can also be chill with whatever sounds are in your environment, in the heard is only the heard. The choice is yours! 
             </p>
+            <p>The custom wholesome thoughts will be saved in your browser.</p>
+
+            <h3>Check out Dhammarato's channel!</h3>
+            <p>For even more information on how to practice here a series videos to get you started. Where Dhammarato talks with students one on one. It's a great resource.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=QVbgTnn9VIsA2e7N&amp;list=PLnR6VmcWzgdcYs3dX20b4NcicWgLYK2Kz" title="YouTube video player" 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            
         </section>
+
+
     </main>
 
     <footer>
         <div>
             <h4>This site was created by D.J. Bennison</h4>
-            <p>  Special thanks to Dhammarato for sharing of the dhamma, and Luka for inspiring the idea of making
-                a breathing app with wholesome thoughts.
-                <br>
+            <div class="flex">
+                <p>  Special thanks to Dhammarato for sharing of the dhamma, and Luka for inspiring the idea of making
+                    a breathing app with wholesome thoughts.
+              
                 You can Email me at Djbennison@gmail.com and if you feel like interacting with friends in dhamma. 
                 You can join the dhamma friends discord server <a class="discordLink" href="https://discord.gg/Kzhwrg47WH">Dhamma friends</a>.
-                <br>
+               
                 Check out the open sangha foundation website to network with other folks on the path.
                 <a class="discordLink" href="https://opensanghafoundation.org/newsite/">Open sangha</a>.
-                <br>
+               
                 Sound Effect by Relaxing & Sleep Sounds: <a class="discordLink" href="https://www.youtube.com/watch?v=BY_lSm2gSzY&t=0s">Youtube link</a>.
-                
-            </p>
+                Confetti JS library by Jay <a  class="discordLink" href="https://www.npmjs.com/package/js-confetti">Link to the documentation</a>
+                </p>
+            </div>
+        </div>
                 
                 
   

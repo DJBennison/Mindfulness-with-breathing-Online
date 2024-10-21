@@ -5,6 +5,12 @@ body {
     margin: 0;
 }
 
+.flex {
+    display: flex;
+    justify-content: center;
+    
+}
+
 .spacePad {
     padding: 30px;
     margin: 30px 0;
@@ -55,6 +61,22 @@ nav li{
     list-style-type: none;
 }
 
+#participate {
+    padding: 1%;
+    background-color:#7ec5ef;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.communityLink {
+    font-size: 200%;
+    
+    margin: 20px;
+}
+
+#participate a:visited{
+    color: black;
+}
 
 #develop {
     display: grid;
@@ -63,24 +85,26 @@ nav li{
 }
 
 .wholesome{
-    height: 600px;
+    height: 690px;
     background-color:#1e4262;
     justify-content: center;
 }
 
 .wholesomeText {
     margin: auto;
-    margin-top: 8rem;
+    margin-top: 160px;
     font-size: 2rem;
-    padding: 6px;
+    padding: 10px;
     width: 250px;
     height: 250px;
     background-color: #7ec5ef;
     border-radius: 200px;
     text-align: center;
-    
-    
+}
 
+.wholesomeText > p {
+    margin: 10px;
+    margin-top: 20px;
 }
 
 .animate {
@@ -148,12 +172,12 @@ nav li{
 .spotBubble {
     margin-right: auto;
    
-    margin-top: -190px;
+    margin-top: -240px;
     /* margin-bottom: -170px; */
-    margin-left: 20px;
-    font-size: 2rem;
-    width: 10rem;
-    height: 10rem;
+    margin-left: 40px;
+    font-size: 3rem;
+    width: 13rem;
+    height: 13rem;
     background-color: #7ec5ef;
     border-radius: 10rem;
     text-align: center;
@@ -164,7 +188,7 @@ nav li{
 }
 
 .spotBubble h3 {
-    padding: 50px 0px;
+    padding: 65px 0px;
 }
 
 .sessionTime h1{
@@ -175,17 +199,20 @@ nav li{
 .bubbleTimer{
     margin: auto;
     text-align: center;
-    margin-top: 8rem;
+    margin-top: 155px;
     font-size: 2rem;
-    width: 10rem;
+    width:  20%;
     height: 3rem;
     background-color: #7ec5ef;
     border-radius: 200px;
-    
+    object-fit: cover;
 }
+
+
 
 .timerAnimate{
     animation: inhaleTime 13s ease forwards;
+
 }
 
 .bubbleTimerExhale {
@@ -194,19 +221,19 @@ nav li{
 
 @keyframes inhaleTime {
     0% {
-        transform: scalex(100%);
+        transform: scale(100%);
     }
     100% {
-        transform: scalex(200%);
+        transform: scale(200%);
     }
 }
 
 @keyframes exhaleTime {
     0% {
-        transform: scalex(200%);
+        transform: scale(200%);
     }
     100% {
-        transform: scalex(100%);
+        transform: scale(100%);
     }
 }
 
@@ -249,9 +276,13 @@ nav li{
     text-align: center;
     background-color: #7ec5ef;
     font-size: 1.5rem;
-    margin: 20px 0px;
+    margin: 5px 0px;
     width: 400px;
     padding:  0.7rem 1rem;
+}
+
+.rainVideo {
+    width: 400px;
 }
 
 .mainSettings{
@@ -351,6 +382,8 @@ nav li{
     text-align: center;
 }
 
+
+
 footer {
     
     background-color:#5a3e30;
@@ -406,16 +439,18 @@ footer {
 
    .bubbleTimer {
     position: relative;
-    top: -60px;
+    top: -70px;
    }
 
    .sessionTime{
     position: relative;
-    top: 405px;
+    top: 500px;
    }
 
    .spotBubble{
-    margin-top: -78px;
+    margin-top: -90px;
+    margin-left: 10px;
+    transform: scale(80%);
     position: relative;
     top: -10px;
    }
