@@ -1,0 +1,2 @@
+> Change the default list to be only be based on the 16 items. 
+> being able to cylce through this list.

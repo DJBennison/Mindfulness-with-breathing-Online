@@ -330,7 +330,7 @@ nav li{
     background-color: #addffc;
 }
 
-.dropDown li:hover{
+.dropDown .wholesomeItem:hover{
     background-color:#1d2f3f;
 }
 
@@ -427,6 +427,8 @@ footer {
 }
 
 @media all and (max-width: 900px) {
+
+
    .wholesomeText {
     width: 150px;
     height: 150px;

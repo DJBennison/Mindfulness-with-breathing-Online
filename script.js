@@ -8,7 +8,7 @@ let inhale = true;
 let breath = "Exhale"
 let length = ""
 
-let sixteenSteps = ["Is this a long breath?","Is this a short breath?","Aware of the body","Relaxing the body","sensitive to successful joy","sensitive to easy satisfaction","Aware of conditions","calming conditions","Aware of mind states","gladdening the mind","collecting the mind","freeing the mind","investigating change","investigating fading","investigating ending","Investigating release"]
+let sixteenItems = ["Is this a long breath?","Is this a short breath?","Aware of the body","Relaxing the body","sensitive to successful joy","sensitive to easy satisfaction","Aware of conditions","calming conditions","Aware of mind states","gladdening the mind","collecting the mind","freeing the mind","investigating change","investigating fading","investigating ending","Investigating release"]
 let defaultList = ['This is satisfying enough',"It's nice to relax right now"]
 let randomWholesomeList = ['This is satisfying enough','We got this', "Wow, I can do this","No place to go","nothing to do","everything is alright right now",'This is it', 'I can relax right now','nothing beats this','I can just relax','no need for anything else right now']
 let wholesomeInList = ['This is satisfying enough','We got this', "Wow, I can do this","No place to go","nothing to do","everything gonna be alright"]
@@ -142,33 +142,43 @@ function wholesomeListPick(){
 }
 
 function  settingsSelect(e){
+    
     if (e.target.classList.value == 'setButton defaultList'){
         wholesomeList = defaultList;
         
     }
-    else if (e.target.classList.value == 'setButton premadeList' ){
-        wholesomeList = sixteenSteps
-        wholesomeListMode = 'cycle'
-    }
+    // else if (e.target.classList.value == 'setButton premadeList' ){
+    //     wholesomeList = sixteenSteps
+    //     wholesomeListMode = 'cycle'
+    // }
     else if (e.target.classList.value == 'setButton customList'){
         wholesomeList = customList;
         wholesomeListMode = 'alternate';
         
     }
-    // These are for the premade
-    else if (e.target.classList.value == 'steps16' ){
-        wholesomeList = sixteenSteps
+    // // These are for the premade
+    // else if (e.target.classList.value == 'steps16' ){
+    //     wholesomeList = sixteenSteps
+    //     wholesomeListMode = 'cycle'
+    // }
+    // else if (e.target.classList.value == 'factors7' ){
+    //     wholesomeList = sevenFactors
+    //     wholesomeListMode = 'cycle'
+    // }
+    // else if (e.target.classList.value == 'randomList' ){
+    //     wholesomeList = randomWholesomeList
+    //     wholesomeListMode = 'random'
+    // }
+    else if(e.target.innerHTML[0] <= 16 && e.target.innerHTML[0] > 0){
+        wholesomeList =  [e.target.innerHTML.slice(3)]
         wholesomeListMode = 'cycle'
+        console.log(e.target.innerHTML)
+       
     }
-    else if (e.target.classList.value == 'factors7' ){
-        wholesomeList = sevenFactors
-        wholesomeListMode = 'cycle'
-    }
-    else if (e.target.classList.value == 'randomList' ){
-        wholesomeList = randomWholesomeList
-        wholesomeListMode = 'random'
-    }
+    
 }
+
+
 
 // wholesome change
 // function wholesomeChange() {
