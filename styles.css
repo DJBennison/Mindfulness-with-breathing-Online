@@ -134,7 +134,7 @@ nav li{
     }
 }
 
-/* Fade in for text */
+/* Fade in for text*/
 
 .fadeIn{
     animation-name: fade;
@@ -157,7 +157,7 @@ nav li{
 .sessionTime{
     margin-left: auto;
     text-align: center;
-    margin-top: -20px;
+    margin-top: -21px;
     margin-bottom: -170px;
     margin-right: 20px;
     
