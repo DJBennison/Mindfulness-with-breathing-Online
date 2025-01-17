@@ -8,7 +8,9 @@ let inhale = true;
 let breath = "Exhale"
 let length = ""
 
-let sixteenItems = ["Is this a long breath?","Is this a short breath?","Aware of the body","Relaxing the body","sensitive to successful joy","sensitive to easy satisfaction","Aware of conditions","calming conditions","Aware of mind states","gladdening the mind","collecting the mind","freeing the mind","investigating change","investigating fading","investigating ending","Investigating release"]
+let sixteenItems = ["1. knwoing this is a long breath","2. Knowing this is a short breath", "3. aware of this whole body",
+    "4. calming this whole body","5. sensitive to successful joy","6. sensitive to secure ease",
+    "7. Aware of emotion","8. calming emotion","9. aware of state of mind","10. satisfying state of mind","11. collecting state of mind","12. freeing state of mind","13. investigating change","14. investigating fading","15. investigating ending","16. throwing it all back to nature"]
 let defaultList = ['This is satisfying enough',"It's nice to relax right now"]
 let randomWholesomeList = ['This is satisfying enough','We got this', "Wow, I can do this","No place to go","nothing to do","everything is alright right now",'This is it', 'I can relax right now','nothing beats this','I can just relax','no need for anything else right now']
 let wholesomeInList = ['This is satisfying enough','We got this', "Wow, I can do this","No place to go","nothing to do","everything gonna be alright"]
@@ -20,6 +22,7 @@ let customList = []
 let wholesomeList = defaultList
 let currentWholesome = wholesomeList[0]
 let wholesomeListMode = 'none'
+let current16Object = -1;
 
 
 let editMode = true;
@@ -34,7 +37,8 @@ const settings = document.getElementById('settings');
 const addButton = document.querySelector('.submitText');
 const addWindow = document.querySelector('.addText');
 const listButton = document.querySelector('.listChange');
-
+const rightCycle = document.querySelector('.rightCycle');
+const leftCycle = document.querySelector('.leftCycle');
 
 // Timer
 let timerTime = 0;
@@ -353,6 +357,20 @@ function listItemChange(e){
     }
 }
 
+rightCycleCLick = () => {
+    wholesomeList = sixteenItems
+    current16Object++
+    current16Object > 15 && (current16Object = 0)
+    currentWholesome = wholesomeList[current16Object]
+}
+
+leftCycleClick = () => {
+    wholesomeList = sixteenItems
+    current16Object--
+    current16Object < 0 && (current16Object = 15)
+    currentWholesome = wholesomeList[current16Object]
+}
+
 // Click to change
 breathBubble.addEventListener('click', breathChange)
 window.addEventListener('keypress', breathKeyChange)
@@ -368,4 +386,7 @@ settings.addEventListener('click', settingsSelect);
 addButton.addEventListener('click', addCustomWholesome)
 document.querySelector('.customList').nextElementSibling.addEventListener('dblclick', deleteCustom)
 document.addEventListener('DOMContentLoaded', displayItems);
+rightCycle.addEventListener('click', rightCycleCLick );
+leftCycle.addEventListener('click', leftCycleClick)
+
 // listButton.addEventListener('click', listItemChange)

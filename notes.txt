@@ -1,2 +1,2 @@
-> Change the default list to be only be based on the 16 items. 
-> being able to cylce through this list.
+> Create two buttons that allow for easy cycling through the wholesome iteams.
+> Work on getting the UI more fit for mobile.
