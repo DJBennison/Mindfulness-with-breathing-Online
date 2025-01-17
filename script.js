@@ -8,7 +8,7 @@ let inhale = true;
 let breath = "Exhale"
 let length = ""
 
-let sixteenItems = ["1. knwoing this is a long breath","2. Knowing this is a short breath", "3. aware of this whole body",
+let sixteenItems = ["1. knowing this is a long breath","2. knowing this is a short breath", "3. aware of this whole body",
     "4. calming this whole body","5. sensitive to successful joy","6. sensitive to secure ease",
     "7. Aware of emotion","8. calming emotion","9. aware of state of mind","10. satisfying state of mind","11. collecting state of mind","12. freeing state of mind","13. investigating change","14. investigating fading","15. investigating ending","16. throwing it all back to nature"]
 let defaultList = ['This is satisfying enough',"It's nice to relax right now"]
